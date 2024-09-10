@@ -32,7 +32,7 @@ body {
     background-color: blue;
     position: fixed;
     top: 0;
-    height: 7%;
+    height: 9%;
     background: var(--transparent);
     z-index: 2;
     width: 100vw;
@@ -89,22 +89,12 @@ body {
     background: var(--more-gray);
 }
 
-@media (max-width: 400px) {
-    #icon {
-        width: 11%;
-    }
 
-    #navigation-item {
-        font-size: 0.8rem;
-        text-align: center;
-    }
-
-}
 
 /* Header */
 
 .header-container {
-    height: 90%;
+    height: 70%;
 }
 
 .header-image {
@@ -279,4 +269,22 @@ body {
 
 .btn:hover {
     background-color: var(--more-gray);
+}
+
+/* Mobile */
+
+@media (max-width: 522px) {
+    #icon {
+        width: 11%;
+    }
+
+    #navigation-item {
+        font-size: 0.8rem;
+        text-align: center;
+    }
+
+    .header-title {
+        margin-top: 50%;
+    }
+
 }
