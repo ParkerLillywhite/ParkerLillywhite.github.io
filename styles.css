@@ -179,6 +179,7 @@ body {
     width: 50%;
     box-shadow: 10px 10px var(--gray);
     object-fit: cover;
+    margin-bottom: 5%;
 }
 .content-container-container {
     margin-top: 15%;
