@@ -1,0 +1,267 @@
+:root {
+    --gray: #CECECE;
+    --more-gray: rgba(136, 136, 136, 0.4);
+    --nav-gray: rgba(206, 206, 206, 0.3);
+    --transparent: rgba(0, 0, 0, 0);
+}
+
+body {
+    font-family: "Roboto", serif;
+    font-size: medium;
+    font-weight: 100;
+    width: 100%;
+}
+
+.page-container {
+    height: 1000px;
+    background-color: white;
+}
+
+.page-container-plan {
+    position: relative;
+    
+    min-height: 500px;
+    background-attachment: fixed;
+    background-image: url(Assets/Images/taniti-nine.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.navigation-container {
+    background-color: blue;
+    position: fixed;
+    top: 0;
+    height: 7%;
+    background: var(--transparent);
+    z-index: 2;
+    width: 100vw;
+}
+
+#navigation-item, #navigation-item a {    
+    height: 100%;
+    position: relative;
+    text-decoration: none;
+    color: black;
+}
+
+#navigation-item:hover{
+    background: var(--nav-gray);
+    cursor: pointer;
+}
+
+#navigation-item::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 0.175rem;
+    left: 0;
+    bottom: 0;
+    background: black;
+    transform: scale(0, 1);
+    transition: transform 0.3s ease;
+}
+
+#navigation-item:hover::after {
+    transform: scale(1, 1);
+}
+
+.nav-item-left {
+    font-size: 1.1em;
+    text-align: center;
+}
+
+.nav-right-item {
+    padding-right: 10%;
+}
+
+#icon {
+    color: black;
+    height: 1%;
+    width: 5%;
+}
+
+#icon:hover {
+    cursor: pointer;
+}
+
+.active {
+    background: var(--more-gray);
+}
+
+/* Header */
+
+.header-container {
+    height: 90%;
+}
+
+.header-image {
+    width: 100%;
+    top: 0;
+    padding: 0;
+    margin: 0;
+    margin-top: -15%;
+    object-fit: cover;
+}
+
+.header-title {
+    position: absolute;
+    font-size: 6rem;
+    margin-top: 15%;
+    color: white;
+    text-shadow: 0 1px 0 black;
+    object-fit: cover;
+}
+
+.header-container-alt {
+    max-height: 50%;
+}
+
+.header-container-plan {
+    max-height: 50%;
+    min-height: 70vh;
+}
+
+.header-image-alt {
+    width: 100%;
+    top: 0;
+    padding: 0;
+    margin: 0;
+    margin-top: -15%;
+    object-fit: cover;
+}
+
+.header-title-alt {
+    position: absolute;
+    font-size: 6rem;
+    margin-top: 15%;
+    color: white;
+    text-shadow: 0 1px 0 black;
+    object-fit: cover;
+}
+
+/* Home Page */
+
+.content-container {
+    min-height: 50%;
+    width: 100vw;
+    margin-top: 5%;
+}
+
+.content-container-plan {
+    position: relative;
+    min-height: 50%;
+    width: 100vw;
+    margin-top: 5%;
+    background-color: white;
+}
+
+.empty-space {
+    content: '';
+    height: 80%;
+    min-height: 200px;
+    background-color: var(--transparent);
+}
+
+.main-content {
+    padding: 5%;
+}
+
+.main-content-plan {
+    padding: 5%;
+    position: relative;
+}
+
+.image-content img {
+    height: 50%;
+    width: 50%;
+    box-shadow: 10px 10px var(--gray);
+    object-fit: cover;
+}
+.content-container-container {
+    margin-top: 15%;
+    min-height: 50%;
+}
+
+.content-container-alt {
+    min-height: 50%;
+    width: 100vw;
+    margin-top: 5%;
+}
+
+.main-content-alt {
+    padding: 5%;
+}
+
+#middle-image {
+    min-height: 200px;
+}
+
+.image-content-alt img {
+    height: 50%;
+    width: 50%;
+    box-shadow: 10px 10px var(--gray);
+    object-fit: cover;
+}
+
+
+
+/* Footer */
+
+.secondary-nav {
+    min-height: 10%;
+    background-image: url(Assets/Images/taniti-two.jpg);
+    background-repeat: none;
+    background-size: cover;
+    background-position: bottom;
+}
+
+.secondary-nav-plan {
+    height: 10%;
+    min-height: 100px;
+    background-color: var(--transparent);
+}
+
+.secondary-nav a {
+    padding: 0% 5%;
+    text-decoration: none;
+    color: black;
+}
+
+.secondary-nav-plan a {
+    padding: 0% 5%;
+    text-decoration: none;
+    color: white;
+}
+
+.secondary-nav a:hover, .secondary-nav-plan a:hover {
+    cursor: pointer;
+}
+
+.citations {
+    font-size: 0.5em;
+    bottom: 0;
+}
+
+/* Form */
+
+
+
+.newsletter-form div {
+    padding: 3%;
+}
+
+.input-field {
+    max-width: 50%;
+}
+
+.btn {
+    max-width: 20%;
+    background-color: var(--nav-gray);
+    color: black;
+    border: black;
+}
+
+.btn:hover {
+    background-color: var(--more-gray);
+}
