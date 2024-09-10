@@ -89,6 +89,18 @@ body {
     background: var(--more-gray);
 }
 
+@media (max-width: 400px) {
+    #icon {
+        width: 11%;
+    }
+
+    #navigation-item {
+        font-size: 0.8rem;
+        text-align: center;
+    }
+
+}
+
 /* Header */
 
 .header-container {
